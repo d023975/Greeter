@@ -1,0 +1,10 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.valid {
+  background-color: #a5d6a7;
+}
+.invalid {
+  background-color: #ffcdd2;
+}

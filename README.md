@@ -1,2 +1,0 @@
-# Greeter
-Created with CodeSandbox
