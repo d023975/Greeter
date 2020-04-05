@@ -1,9 +1,13 @@
 import React from 'react';
 function App() {
-  const greeting = 'Hello Function Component!';
-  return <Headline value={greeting} />;
+	const greeting = { text: 'Welcome to React' };
+	return (
+		<div>
+			<Headline value={greeting} />
+		</div>
+	);
 }
-function Headline(props) { //no destructuring in function signature
-  return <h1>{props.value}</h1>;
+function Headline({ value }) {
+	return <h1>{value.text}</h1>;
 }
 export default App;
