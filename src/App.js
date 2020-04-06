@@ -10,14 +10,14 @@ function App() {
 		</div>
 	);
 }
-function Headline({ subject, description }) {
+function Headline({ subject, ...other }) {
 	const Title = ({ title }) => <h1>{title}</h1>;
 	const Description = ({ description }) => <p>{description}</p>;
 
 	return (
 		<div>
 			<Title title={`Welcome to ${subject}`} />
-			<Description description={description} />
+			<Description {...other} />
 		</div>
 	);
 }
