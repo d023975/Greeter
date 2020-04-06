@@ -7,7 +7,7 @@ function App() {
 		</div>
 	);
 }
-function Headline({ value }) {
-	return <h1>{value.text}</h1>;
+function Headline({ value : val }) {
+	return <h1>{val.text}</h1>;
 }
 export default App;
