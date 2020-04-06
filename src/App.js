@@ -1,13 +1,26 @@
 import React from 'react';
 function App() {
-	const greeting = { text: 'Welcome to React' };
+	const greeting = {
+    subject: 'React',
+    description: 'Your component library for ...',
+  };
 	return (
 		<div>
-			<Headline value={greeting} />
+			<Headline value={{...greeting}} />
 		</div>
 	);
 }
 function Headline({ value : val }) {
-	return <h1>{val.text}</h1>;
+
+  const Title = ({ title }) => <h1>{title}</h1>;
+  const Description = ({ description }) => <p>{description}</p>;
+
+	return (
+    <div>
+      <Title title={`Welcome to ${val.subject}`} />
+      <Description description={val.description} />
+    </div>
+  
+  );
 }
 export default App;
