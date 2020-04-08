@@ -14,4 +14,4 @@ const yar = document.getElementById("yar");
 //   rootElement
 // );
 ReactDOM.render(<Greeter maxLength={20} />, rootElement);
-ReactDOM.render(<Greeter2 maxLength={20} />, yar);
+ReactDOM.render(<Greeter2 title="Enter Title" />, yar);
